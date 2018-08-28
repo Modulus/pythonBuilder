@@ -12,7 +12,7 @@ podTemplate(label: label, containers : [
             sh """
             echo 'building from repo $repo'
             echo 'commit $gitCommit and branch $gitBranch'
-            """"
+            """
         }
         stage("Build and publish container"){
             container("docker"){
